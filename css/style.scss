@@ -1,0 +1,163 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container-fluid{
+   width: 100%;
+}
+.container{
+   width: 100%;
+   margin: 0 auto;
+}
+.hidden-xs{
+   display: none;
+}
+.hidden-sm{
+   display: block;
+}
+
+//HEADER-------------------------
+.header-main-fluid{
+   background-image: linear-gradient(to right top, #3dcdbc, #2bc3c0, #22b8c2, #27adc1, #33a2bd);
+}
+
+.header-main > div{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.header-main > img{
+   width: 80%;
+   max-width: 300px;
+}
+
+.header-main > div > h2{
+   font-family: "Raleway", sans-serif;
+   font-weight: 300;
+   font-size: 50px;
+   color: #fff;
+   margin-bottom: 30px;
+
+}
+
+.header-main > div > p{
+   font-family: "Raleway", sans-serif;
+   font-size: 20px;
+   color: #fff;
+   font-weight: 100;
+   margin-bottom: 30px;
+}
+
+.header-main > div > a{
+   display: inline-block;
+   font-family: "Raleway", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   color: #33a2bd;
+   text-align: center;
+   background-color: #fff;
+   text-decoration: none;
+   height: 50px;
+   width: 200px;
+   padding: 15px;
+}
+
+.header-main > div > a:hover{
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+   transition: 0.5;
+}
+
+//REKLAMY------------------------------------------
+.container-fluid{
+   background-color: #f6f6f6;
+}
+
+.sponsors{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 30px;
+}
+
+.sponsors > a{
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+.sponsors > a > img{
+   height: 80%;
+   width: 80%;
+}
+
+
+@media(min-width:576px){
+   .container{
+      width: 540px;
+   }
+   .hidden-xs{
+      display: block;
+   }
+   .hidden-sm{
+      display: none;
+   }
+}
+
+@media(min-width:768px){
+   .container{
+      width: 720px;
+   }
+   .hidden-sm{
+      display: block;
+   }
+   .hidden-md{
+      display: none;
+   }
+}
+@media(min-width:992px){
+   .header-main > img{
+      max-width: 300px;
+   }
+   .header-main > div{
+      margin: 100px;
+      align-items: flex-start;
+   }
+   .header-main{
+      flex-direction: row;
+   }
+   .container{
+      width: 960px;
+   }
+   .hidden-md{
+      display: block;
+   }
+   .hidden-lg{
+      display:none;
+   }
+}
+@media(min-width:1200px){
+   .container{
+      width: 1140px;
+   }
+   .hidden-lg{
+      display: block;
+   } 
+   .hidden-xl{
+      display: none;
+   }
+}
